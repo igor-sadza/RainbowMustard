@@ -46,7 +46,7 @@ done
 
 ### Create ssh-keygen 
 
-Follow this <a href="https://serverfault.com/a/241593"><strong>serverfault</strong></a> instruction
+From this <a href="https://serverfault.com/a/241593"><strong>serverfault</strong></a> instruction
 
 ```sh
 ssh-keygen -t rsa -b 2048
