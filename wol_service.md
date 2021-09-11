@@ -76,6 +76,7 @@ do
                 iptables -D ${glob_iptables_rules[$i]}
         fi
 done
+iptables save
 
 while true 
 do 
@@ -83,7 +84,7 @@ do
 
 #Check http request
 # ---------------------
-        if [ $glob_https_request == 0 ]
+        if [ $glob_https_request -eq 0 ]
         then
 
                 timeout 5 socat -T 1 \
@@ -115,13 +116,14 @@ do
                         do
                                 iptables -A ${glob_iptables_rules[$i]}
                         done
-                        rm output
+                        iptables save
                 fi
+                rm /root/bin/wol_script/output
         fi
 
 # Wait minute
 # ---------------------
-        if [ $glob_https_request == 1 ]
+        if [ $glob_https_request -eq 1 ]
         then
                 if [ $glob_current_time -ge $glob_wakeup_time_extended ] && [ $glob_wakeup == 0 ]
                 then
@@ -133,7 +135,7 @@ do
 
 # Checks host is wakeup
 # ---------------------
-        if [ $glob_start_pinging == 1 ] 
+        if [ $glob_start_pinging -eq 1 ] 
         then
                 if ! ping -c 1 $glob_host_ip &> /dev/null
                 then
@@ -153,7 +155,7 @@ do
                                         iptables -D ${glob_iptables_rules[$i]}
                                 done
                         done
-
+                        iptables save
                 fi
         fi
 done
