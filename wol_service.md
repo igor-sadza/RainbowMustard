@@ -190,7 +190,7 @@ WantedBy=multi-user.target
 3. Copy unit file to system
 
 ```sh
-cp wol.service /etc/systemd/system/wol.service; \
+cp /lib/systemd/system/wol.service /etc/systemd/system/wol.service; \
 chmod 644 /etc/systemd/system/wol.service
 ```
 4. Start our new service
