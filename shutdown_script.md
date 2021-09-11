@@ -1,3 +1,6 @@
+### Shutdown script
+
+```sh
 #!/bin/bash
 ###################################################################
 #Script Name: shtudown_script
@@ -39,3 +42,13 @@ do
                 fi
         fi
 done
+```
+
+### Create ssh-keygen 
+
+Follow this <a href="https://serverfault.com/a/241593"><strong>serverfault</strong></a> instruction
+
+```sh
+ssh-keygen -t rsa -b 2048
+ssh-copy-id user@server
+```
