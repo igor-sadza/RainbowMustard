@@ -150,7 +150,7 @@ do
                         for ((i = 0; i < ${#glob_iptables_rules[@]}; i++))
                         do
                                 iptables -C ${glob_iptables_rules[$i]}
-                                while [ $? == 0 ] 
+                                while [ $? -eq 0 ] 
                                 do
                                         iptables -D ${glob_iptables_rules[$i]}
                                 done
