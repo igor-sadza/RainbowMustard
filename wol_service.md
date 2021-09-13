@@ -101,12 +101,12 @@ do
                 keepcnt=2, \
                 crlf system:"cat "$glob_script_dir"/index.html; cat > "$glob_script_dir"/output"
       
-                #if [ -f "${glob_script_dir}/output" ]
-                #then
-                        var=($(grep wol "${glob_script_dir}/output" | sed 's/^.*\(wol\).*$/\1/'));
-                #fi
+                if [ -f "$glob_script_dir/output" ]
+                then
+                        var=($(grep wol "$glob_script_dir/output" | sed 's/^.*\(wol\).*$/\1/'));
+                fi
                 
-                if [[ -n $var ]]
+                if [[ -n "${var}" ]]
                 then
                         echo WAKEUP!
                         wakeonlan 04:92:26:da:e0:c8
@@ -139,9 +139,9 @@ do
 # Checks host is wakeup
 # ---------------------
         ping_var=($(ping -w 1 10.0.0.200 | grep from));
-        if [ $glob_start_pinging -eq 1 ] || [ -n $ping_var ]
+        if [ $glob_start_pinging -eq 1 ] || [ -n "${ping_var} ]
         then
-                if [ -z $ping_var ]
+                if [ -z "${ping_var" ]
                 then
                         glob_https_request=0
                         glob_start_pinging=0
@@ -156,7 +156,7 @@ do
                                 done
                         done
                 fi
-                if [ -n $ping_var ]
+                if [ -n "${ping_var}" ]
                 then
                         sysctl net.ipv4.conf.wlan0.forwarding=1
                         for ((i = 0; i < ${#glob_iptables_rules[@]}; i++))
