@@ -10,6 +10,8 @@ git clone https://github.com/aboul3la/Sublist3r.git
 
 ### Script
 
+Go to Sublist3r dir and run script below
+
 ```sh
 DOMAIN=igor-sadza.pl; \
 python sublist3r.py -d $DOMAIN -o domains_list; \
