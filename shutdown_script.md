@@ -52,3 +52,26 @@ From this <a href="https://serverfault.com/a/241593"><strong>serverfault</strong
 ssh-keygen -t rsa -b 2048
 ssh-copy-id user@server
 ```
+
+### Create system service
+
+```sh
+vi /etc/systemd/system/shutdown.service
+```
+```sh
+[Unit]
+Description=Shutdown script
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/sudo /bin/bash /root/bin/shutdown_script/script.sh
+
+[Install]
+WantedBy=multi-user.target
+```
+```sh
+systemctl enable shutdown
+systemctl start shutdown
+```
+
+
