@@ -139,23 +139,8 @@ do
 # Checks host is wakeup
 # ---------------------
         ping_var=($(ping -w 1 10.0.0.200 | grep from));
-        if [ $glob_start_pinging -eq 1 ] || [ -n "${ping_var} ]
+        if [[ $glob_start_pinging -eq 1 ]] || [[ -n "${ping_var} ]]
         then
-                if [ -z "${ping_var" ]
-                then
-                        glob_https_request=0
-                        glob_start_pinging=0
-                        glob_wakeup=0
-                        sysctl net.ipv4.conf.wlan0.forwarding=0
-                        for ((i = 0; i < ${#glob_iptables_rules[@]}; i++))
-                        do
-                                iptables -C ${glob_iptables_rules[$i]}
-                                while [ $? -eq 0 ]
-                                do
-                                        iptables -D ${glob_iptables_rules[$i]}
-                                done
-                        done
-                fi
                 if [ -n "${ping_var}" ]
                 then
                         sysctl net.ipv4.conf.wlan0.forwarding=1
@@ -168,6 +153,20 @@ do
                                 done
                         done
                 fi
+        elif [[ -z "${ping_var" ]]
+        then
+                glob_https_request=0
+                glob_start_pinging=0
+                glob_wakeup=0
+                sysctl net.ipv4.conf.wlan0.forwarding=0
+                for ((i = 0; i < ${#glob_iptables_rules[@]}; i++))
+                do
+                        iptables -C ${glob_iptables_rules[$i]}
+                        while [ $? -eq 0 ]
+                        do
+                                iptables -D ${glob_iptables_rules[$i]}
+                        done
+                done
         fi
 done
 ```
