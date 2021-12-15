@@ -12,31 +12,6 @@ my_dns_names=(
 
 function main() {
 
-
-        configured_dns_names=( $(certbot certificates | grep Domains: | sed 's/.*s: //g') );
-        unset configured_dns_names[0];
-
-        flag=0;
-        for i in ${my_dns_names[@]}; do
-                for j in ${configured_dns_names[@]}; do
-                        if [ "$(echo $i | sed 's/-d//g')" != "$j" ]; then
-                                flag=0
-                                break;
-                        else
-#!/bin/bash
-
-my_dns_names=(
-         keycloak.biomed.org.pl
-         bitwarden.biomed.org.pl
-         seafile.biomed.org.pl
-         iredmail.biomed.org.pl
-         guacamole.biomed.org.pl
-         grafana.biomed.org.pl
-         onlyoffice.biomed.org.pl
-);
-
-function main() {
-
         configured_dns_names=( $(certbot certificates | grep Domains: | sed 's/.*s: //g') );
         unset configured_dns_names[0];
 
