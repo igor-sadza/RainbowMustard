@@ -20,7 +20,6 @@ function main() {
                 for j in ${configured_dns_names[@]}; do
                         if [ "$(echo $i | sed 's/-d//g')" != "$j" ]; then
                                 flag=0
-                                break;
                         else
                                 flag=1
                                 break;
