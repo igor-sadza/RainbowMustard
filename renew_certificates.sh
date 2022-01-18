@@ -8,12 +8,13 @@ my_dns_names=(
          guacamole.biomed.org.pl
          grafana.biomed.org.pl
          onlyoffice.biomed.org.pl
+         dashy.biomed.org.pl
 );
 
 function main() {
 
         configured_dns_names=( $(certbot certificates | grep Domains: | sed 's/.*s: //g') );
-        unset configured_dns_names[0];
+        #unset configured_dns_names[0];
 
         flag=0;
         for i in ${my_dns_names[@]}; do
@@ -24,32 +25,43 @@ function main() {
                                 flag=1
                                 break;
                         fi
-                done
+                done 
         done
 
         my_dns_names=( "${my_dns_names[@]/#/-d }" )
-
+        certificate_name=services.biomed.org.pl
         var=(
                 "certbot"
                 "certonly"
-                "--cert-name services.biomed.org.pl"
+                "--cert-name $certificate_name"
                 "--register-unsafely-without-email"
                 "--agree-tos"
                 "--standalone"
                 "${my_dns_names[@]}"
         );
 
-        if [ $flag -eq 0 ]; then
-                var[1]=renew
+        if [ $flag -eq 1 ]; then
+                var[1]="renew --force-renewal --no-random-sleep-on-renew"
+                for i in {2..5}; do
+                        unset var[$i]
+                done
 
                 range=$((${#var[@]} + ${#my_dns_names[@]}));
+                echo $range
                 for ((i=5;i<$range;i++)); do
                         unset var[$i]
                 done
         else
-                var[1]=certonly
+                var[1]="certonly" 
         fi
 
-        eval ${var[@]}
+        #echo ${var[@]}
+
+        systemctl stop haproxy.service & 
+        sleep 30 &
+        eval ${var[@]} &
+        cat /etc/letsencrypt/live/$certificate_name/{fullchain,privkey}.pem > /etc/letsencrypt/live/$certificate_name/$certificate_name.pem
+        sleep 30 &
+        systemctl start haproxy.service
 };
 main
