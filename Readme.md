@@ -1,3 +1,3 @@
-## BashAndAsh
+## ShellScripts
 
-A place where i can put my bash * 
+A repository of loosely written scripts unrelated to any project.
