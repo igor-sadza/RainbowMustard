@@ -1,3 +1,3 @@
-## Shell-Repo
+## shell-repo
 
 Non-project related shell scripts. 
