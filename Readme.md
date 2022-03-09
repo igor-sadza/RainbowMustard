@@ -1,3 +1,3 @@
-## ShellScripts
+## SH-Repo
 
-A repository of loosely written scripts unrelated to any project.
+Non-project related shell scripts. 
