@@ -1,3 +1,9 @@
+#Task scheduler - Run Powershell Script upon Network Connection
+#schtasks /create /tn "Net-Connected" /tr "powershell -executionpolicy bypass -file '%SYSTEMDRIVE%\add_vm_host.ps1'" 
+#/SC ONEVENT /EC Microsoft-Windows-NetworkProfile/Operational /MO "*[System[Provider[@Name='Microsoft-Windows-NetworkProfile'] and EventID=10000]]" 
+#/RU "System" /F
+
+
 param([switch]$Elevated)
 
 function Test-Admin {
