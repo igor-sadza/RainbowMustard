@@ -30,7 +30,8 @@ $array_vm_names=@(get-vm `
 $array_ip_addreses =@((get-vm `
                      | Select -ExpandProperty Networkadapters `
                      | Select -ExpandProperty IPAddresses `
-                     | Select-String -Pattern $regrex_ip4) `
+                     | Select-String -Pattern $regrex_ip4 `
+                     | Select -First 1 ) `
                      | Out-String);
 
 $array_vms_data=New-Object System.Collections.ArrayList
