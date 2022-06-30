@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libstates.a  CMakeFiles/states.dir/StateSwitcher.cpp.o CMakeFiles/states.dir/StateManager.cpp.o CMakeFiles/states.dir/StateLogo.cpp.o CMakeFiles/states.dir/StateMenu.cpp.o
+/usr/bin/ranlib ../../lib/libstates.a

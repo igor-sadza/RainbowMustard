@@ -1,0 +1,11 @@
+C:\Users\Administrator\source\repos\ChangePremmisions\obj\Debug\ConsoleProgram.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\ChangePremmisions\obj\Debug\ChangePremmisions.exe
+C:\Users\Administrator\source\repos\ChangePremmisions\obj\Debug\ChangePremmisions.pdb
+C:\Users\Administrator\source\repos\ChangePremmisions\bin\Debug\ChangePremmisions.exe.config
+C:\Users\Administrator\source\repos\ChangePremmisions\bin\Debug\ChangePremmisions.exe.manifest
+C:\Users\Administrator\source\repos\ChangePremmisions\bin\Debug\ChangePremmisions.application
+C:\Users\Administrator\source\repos\ChangePremmisions\bin\Debug\ChangePremmisions.exe
+C:\Users\Administrator\source\repos\ChangePremmisions\bin\Debug\ChangePremmisions.pdb
+C:\Users\Administrator\source\repos\ChangePremmisions\obj\Debug\ChangePremmisions.exe.manifest
+C:\Users\Administrator\source\repos\ChangePremmisions\obj\Debug\ChangePremmisions.application
+C:\Users\Administrator\source\repos\ChangePremmisions\obj\Debug\ConsoleProgram.csprojAssemblyReference.cache

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ChangePremmisions.exe" version="1.0.0.0" publicKeyToken="17d86b8e5c412750" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ChangePremmisions" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ChangePremmisions.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChangePremmisions.exe" size="6128">
+      <assemblyIdentity name="ChangePremmisions" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>lUEpuHYC+BG2tM1TegdaZxBJhZMvtrnSNMeIALvdNTs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ChangePremmisions.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=SERWIS-IS\Administrator" issuerKeyHash="1d67c562b88c5ba8c1f15c0f4c007918d93f334e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>A07M90V1eM5UWap2xjUjQtdyiw6dv5AbBZIish6soaU=</DigestValue></Reference></SignedInfo><SignatureValue>Iqasf9bi3tLH+C8LyW7hlUfib8QfIO5py4G54206w09y/vR20jS9biGt5wqvHkFgiqlEj49bXksA4SRVKf2G1ho8dJNaOUGRn/1XoLgzWQgrVECXEP8RZtEzCn0mZ8N9J5XuWgsVBGKYXJDPgm8ofSneD+pvcU7Gy1U+1BVyfzc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>w9fwh8jr+cF/vUhiSgMwDwh1cTlJ+js9iKiZ64wsqgiJR8FjxlBXRgQHNefNbrR1lThAXsNCwptiSHD44Vk8oRIFLw6zNnFfn8brdB1qdFLdP6969aIDR3WCCyGek/O9w8yasuPfa2sO8y+N8LAoyDNSLRjVCt6xj0kgd/SSSK0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="a5a1ac1eb22292051b90bf9d0e8b72d7422335c676aa5954ce787545f7cc4e03" Description="" Url=""><as:assemblyIdentity name="ChangePremmisions.exe" version="1.0.0.0" publicKeyToken="17d86b8e5c412750" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SERWIS-IS\Administrator</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>PNBT4G5Bg5P/U+YGHLImsBaGndsmo7FQZQ0aivmI85A=</DigestValue></Reference></SignedInfo><SignatureValue>TvdKMdo6U5XRyZkAUUcnR3O1W9TX0bwxruGeBISNrjmS83coc0lf9APbmjDde6NMqfUrBLjMhmEniV/P81bWdjMUU7ULrooppPqeZ3/6Ys9+h8mbK1JxAaveTj/IAfxI+UEgtfmnAEOHrqnRPs6p1OM6oNDhdGAHr32xfDlWwqU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>w9fwh8jr+cF/vUhiSgMwDwh1cTlJ+js9iKiZ64wsqgiJR8FjxlBXRgQHNefNbrR1lThAXsNCwptiSHD44Vk8oRIFLw6zNnFfn8brdB1qdFLdP6969aIDR3WCCyGek/O9w8yasuPfa2sO8y+N8LAoyDNSLRjVCt6xj0kgd/SSSK0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB9TCCAV6gAwIBAgIQWXWY69nwnKNE8Ah/qPUh9zANBgkqhkiG9w0BAQsFADA5MTcwNQYDVQQDHi4AUwBFAFIAVwBJAFMALQBJAFMAXABBAGQAbQBpAG4AaQBzAHQAcgBhAHQAbwByMB4XDTIxMDMxODE5MDMzNVoXDTIyMDMxOTAxMDMzNVowOTE3MDUGA1UEAx4uAFMARQBSAFcASQBTAC0ASQBTAFwAQQBkAG0AaQBuAGkAcwB0AHIAYQB0AG8AcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAw9fwh8jr+cF/vUhiSgMwDwh1cTlJ+js9iKiZ64wsqgiJR8FjxlBXRgQHNefNbrR1lThAXsNCwptiSHD44Vk8oRIFLw6zNnFfn8brdB1qdFLdP6969aIDR3WCCyGek/O9w8yasuPfa2sO8y+N8LAoyDNSLRjVCt6xj0kgd/SSSK0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQAIyKRhy+FwLtT5V4F7ol74yZ/xKnr3PP6ENLyBAeg4KXs/QdCP5NYtUDzZoyWcZRku+ua8NNpiL8gGBsD2Z+goOakj7lm4BRH4c3eovktbSIKfEfaX82jAWn8aOL10kOy6SHiXH3D3mIZPN2Tujyy5Ufpl6rRIj5bxIC0KceJsyQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

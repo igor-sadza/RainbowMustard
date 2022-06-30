@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libutils.a  CMakeFiles/utils.dir/SharedResources.cpp.o CMakeFiles/utils.dir/Settings.cpp.o CMakeFiles/utils.dir/FileParser.cpp.o CMakeFiles/utils.dir/PrimitiveRenderer.cpp.o
+/usr/bin/ranlib ../../lib/libutils.a

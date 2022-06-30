@@ -1,0 +1,11 @@
+C:\Users\Administrator\source\repos\ChangePremmisions\obj\Release\ConsoleProgram.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\ChangePremmisions\bin\Release\ConsoleProgram.exe.config
+C:\Users\Administrator\source\repos\ChangePremmisions\bin\Release\ConsoleProgram.exe.manifest
+C:\Users\Administrator\source\repos\ChangePremmisions\bin\Release\ConsoleProgram.application
+C:\Users\Administrator\source\repos\ChangePremmisions\bin\Release\ConsoleProgram.exe
+C:\Users\Administrator\source\repos\ChangePremmisions\bin\Release\ConsoleProgram.pdb
+C:\Users\Administrator\source\repos\ChangePremmisions\obj\Release\ConsoleProgram.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\ChangePremmisions\obj\Release\ConsoleProgram.exe.manifest
+C:\Users\Administrator\source\repos\ChangePremmisions\obj\Release\ConsoleProgram.application
+C:\Users\Administrator\source\repos\ChangePremmisions\obj\Release\ConsoleProgram.exe
+C:\Users\Administrator\source\repos\ChangePremmisions\obj\Release\ConsoleProgram.pdb

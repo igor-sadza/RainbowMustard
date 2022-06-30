@@ -1,0 +1,1 @@
+/usr/bin/c++   -lglfw -ldl -lfreetype   CMakeFiles/testCPP.dir/main.cpp.o  -o ../bin/testCPP ../lib/libexternal.a ../lib/libutils.a ../lib/libstates.a ../lib/libpieces.a ../lib/libutils.a ../lib/libexternal.a 

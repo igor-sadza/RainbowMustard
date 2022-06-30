@@ -1,0 +1,7 @@
+﻿  ChangeResolution.cpp
+C:\Users\Administrator\source\repos\ChangeResolution\ChangeResolution.cpp(64,21): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'WCHAR *'
+C:\Users\Administrator\source\repos\ChangeResolution\ChangeResolution.cpp(64,21): message : consider using '%ls' in the format string
+C:\Users\Administrator\source\repos\ChangeResolution\ChangeResolution.cpp(64,21): message : consider using '%lls' in the format string
+C:\Users\Administrator\source\repos\ChangeResolution\ChangeResolution.cpp(64,21): message : consider using '%Ls' in the format string
+C:\Users\Administrator\source\repos\ChangeResolution\ChangeResolution.cpp(64,21): message : consider using '%ws' in the format string
+  ChangeResolution.vcxproj -> C:\Users\Administrator\source\repos\ChangeResolution\Debug\ChangeResolution.exe

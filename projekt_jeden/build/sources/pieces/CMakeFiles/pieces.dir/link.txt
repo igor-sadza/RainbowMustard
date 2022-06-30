@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libpieces.a  CMakeFiles/pieces.dir/Glyph.cpp.o CMakeFiles/pieces.dir/Primitive.cpp.o CMakeFiles/pieces.dir/Shader.cpp.o CMakeFiles/pieces.dir/Sprite.cpp.o
+/usr/bin/ranlib ../../lib/libpieces.a

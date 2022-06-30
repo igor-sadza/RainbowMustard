@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libexternal.a  CMakeFiles/external.dir/glad.c.o CMakeFiles/external.dir/stb_image.cpp.o
+/usr/bin/ranlib ../lib/libexternal.a
