@@ -1,3 +1,3 @@
 ## RainbowMustard
 
-non-related scripts and repos
+Non-related scripts and repos
