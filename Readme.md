@@ -1,3 +1,3 @@
-## shell-repo
+## RainbowMustard
 
-Non-project related shell scripts. 
+some scripts and repositories
