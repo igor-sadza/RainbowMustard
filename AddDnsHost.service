@@ -1,0 +1,11 @@
+[Unit]
+Description=Use vm id as ip address, hostname
+
+[Service]
+User=root
+WorkingDirectory=/root/bin
+ExecStart=/bin/bash -c /root/bin/AddDnsHost.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
